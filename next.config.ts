@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // or 'export' for full static
-  trailingSlash: true,
+  output: 'export',  // CRITICAL: Must be 'export' for Azure Static Web Apps
   images: {
-    unoptimized: true
-  }
+    unoptimized: true  // Required when using 'export'
+  },
+  trailingSlash: true  // Helps with routing on Azure
 }
 
 module.exports = nextConfig
