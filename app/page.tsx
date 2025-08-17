@@ -1,8 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import ContactPage from './components/ContactPage';
+import ExperiencePage from './components/ExperiencePage';
+import ProjectsPage from './components/ProjectsPage';
+import SkillsPage from './components/SkillsPage';
 
-const PortfolioLayout = () => {
+const PortfolioApp = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [darkMode, setDarkMode] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -338,33 +342,4 @@ const AboutPage = () => {
   );
 };
 
-// Placeholder components for other pages
-const ProjectsPage = () => (
-  <div className="pt-12 text-center">
-    <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">Projects</h1>
-    <p className="text-xl text-slate-600 dark:text-slate-400">Coming soon...</p>
-  </div>
-);
-
-const SkillsPage = () => (
-  <div className="pt-12 text-center">
-    <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">Skills</h1>
-    <p className="text-xl text-slate-600 dark:text-slate-400">Coming soon...</p>
-  </div>
-);
-
-const ExperiencePage = () => (
-  <div className="pt-12 text-center">
-    <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">Experience</h1>
-    <p className="text-xl text-slate-600 dark:text-slate-400">Coming soon...</p>
-  </div>
-);
-
-const ContactPage = () => (
-  <div className="pt-12 text-center">
-    <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">Contact</h1>
-    <p className="text-xl text-slate-600 dark:text-slate-400">Coming soon...</p>
-  </div>
-);
-
-export default PortfolioLayout;
+export default PortfolioApp;
