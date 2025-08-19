@@ -33,6 +33,41 @@ const ExperiencePage = () => {
 
   const experiences: Experience[] = [
     {
+      id: 0,
+      title: "Software Developer Intern",
+      company: "CBE",
+      location: "Ireland",
+      duration: "April 2025 – Present (6-month internship)",
+      type: "Internship",
+      status: "Current",
+      icon: "💼",
+      color: "from-blue-600 to-indigo-600",
+      description:
+        "6-month placement focusing on modernizing internal dashboards and role-based access control. Worked across front end (Blazor/MudBlazor) and .NET APIs with Azure and SQL.",
+      responsibilities: [
+        "Implemented RBAC features with clean UX in MudBlazor",
+        "Integrated Microsoft Entra ID for authentication and SSO",
+        "Built reusable components and improved frontend architecture",
+        "Create a series of charts and reports utilising Mudblazor and Azure DevOps API data",
+        "Optimized SQL queries and EF Core mappings for key views"
+      ],
+      achievements: [
+        "RBAC dashboard MVP used by the team",
+        "Reduced UI defect rate via component library + story-like previews",
+        "Improved auth reliability with token refresh + middleware"
+      ],
+      skills: [
+        "Blazor", "MudBlazor", "C#", ".NET", "EF Core",
+        "Azure", "Azure DevOps", "SQL Server", "Entra ID", "Git"
+      ],
+      highlights: {
+        "Area": "RBAC + Dashboards",
+        "Frontend": "MudBlazor",
+        "Cloud": "Azure",
+        "Auth": "Entra ID"
+      }
+    },
+    {
       id: 1,
       title: "Part-time Waiter & Host",
       company: "Luseas Restaurant, Westport Coast Hotel",
