@@ -33,7 +33,7 @@ const HomePage: React.FC<{ setCurrentPage: (page: string) => void }> = ({ setCur
 
         <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
           <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
-            I build clean, reliable web apps
+            Eunan Murray
           </span>
         </h1>
 
